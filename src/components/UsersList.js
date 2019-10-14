@@ -1,23 +1,10 @@
-import React from 'react';
 import useResources from './useResources';
+import UsersListJsx from '../templates/UsersList';
 
 const UsersList = () => {
   const users = useResources('users');
 
-  return (
-    <div>
-      <div>
-        <span>
-          {users.length}
-          {' '}
-          users
-        </span>
-      </div>
-      <ul>
-        {users.map(user => <li key={user.id}>{user.name}</li>)}
-      </ul>
-    </div>
-  );
+  return UsersListJsx({ users });
 };
 
 export default UsersList;
