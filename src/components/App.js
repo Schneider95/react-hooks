@@ -7,18 +7,18 @@ const App = () => {
 
   return (
     <div>
-    <UsersList />
+      <UsersList />
       <div>
-        <button onClick={() => setResource('posts')}>
+        <button onClick={() => setResource('posts')} type="button">
           Posts
         </button>
-        <button onClick={() => setResource('todos')}>
+        <button onClick={() => setResource('todos')} type="button">
           Todos
         </button>
       </div>
-      <ResourceList resource={resource}/>
+      <ResourceList resource={resource} />
     </div>
   );
-}
+};
 
 export default App;

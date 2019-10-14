@@ -7,15 +7,17 @@ const UsersList = () => {
   return (
     <div>
       <div>
-        {users.length} users
+        <span>
+          {users.length}
+          {' '}
+          users
+        </span>
       </div>
       <ul>
-        {users.map(user => 
-          <li key={user.id}>{user.name}</li>
-        )}
+        {users.map(user => <li key={user.id}>{user.name}</li>)}
       </ul>
     </div>
   );
-}
+};
 
 export default UsersList;

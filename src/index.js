@@ -1,5 +1,7 @@
-import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './components/App';
+import indexJsx from './templates/Index';
 
-ReactDOM.render(<App />, document.querySelector('#root'));
+ReactDOM.render(
+  indexJsx(),
+  document.querySelector('#root'),
+);
